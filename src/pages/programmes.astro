@@ -1,0 +1,184 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Pricing from "@components/pricing.astro";
+
+const pricing = [
+  {
+    name: "Safe Place",
+    price: "$10,000",
+    popular: false,
+    features: [
+      "Safe Place for help",
+      "Counseling",
+      "Free Mental Health Checkups",
+      "Life Coaching",
+      
+    ],
+    button: {
+      text: "Get Started",
+      link: "/",
+    },
+  },
+  {
+    name: "Studio",
+    price: {
+      monthly: "$10,000",
+      annual: "$16",
+      discount: "10%",
+      original: "$24",
+    },
+    popular: true,
+    features: [
+      "Music Production",
+      "Offers lessons",
+      "Business of Music",
+      "Video Production"
+    ],
+    button: {
+      text: "Get Started",
+      link: "#",
+    },
+  },
+  {
+    name: "Rehab Centre",
+    price: "100,000",
+    popular: false,
+    features: [
+      "Rehabilitation facilties",
+      "Detox Centre",
+      "Upskilling",
+      "Cross-Border Support"
+    ],
+    button: {
+      text: "Contact us",
+      link: "/contact",
+    },
+  },
+];
+---
+
+
+<Layout title="Programmes">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT98KX4B1X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MT98KX4B1X');
+</script>
+  <Container>
+    <Sectionhead>
+      
+      <Fragment slot="title"> <h1
+        class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl text-center font-extrabold text-transparent sm:text-5xl "
+      >
+      Our Programmes
+
+        <span class="sm:block">   </span>
+      </h1></Fragment>
+      
+      <Fragment slot="desc"
+        > HAZEYouth: Urgency, Agency, and Transformation</Fragment
+      >
+    </Sectionhead>
+    <div class="flex flex-col w-full max-w-3xl mx-auto prose text-left prose-blue">
+      <div class="w-full mx-auto">
+        <h1
+  class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl text-center font-extrabold text-transparent sm:text-5xl "
+>
+Strategic Areas
+
+  <span class="sm:block">   </span>
+</h1>
+     
+          <h3> At HAZEYouth, we are on a mission to empower young people to become agents of their own transformation. Our programmes are designed around five core Strategic Areas:</h3>
+      </div>
+  </div>
+    <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 mt-5">
+      <div class="w-full">
+          <div class="flex flex-col w-full mb-10 sm:flex-row">
+              <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
+                  <div class="relative h-full ml-0 mr-0 sm:mr-10">
+                    
+                      <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-indigo-500 rounded-lg"></span>
+                      
+                      <div class="relative h-full p-5 bg-white border-2 border-indigo-500 rounded-lg">
+                          <div class="flex items-center -mt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -1.5 24 24" width="64" fill="currentColor"><path d="M11.774 14l.502-1.378a2 2 0 1 0-3.759-1.368l-.684 1.88A1.992 1.992 0 0 0 7.72 14H5a5 5 0 1 1 1.561-9.751A7.002 7.002 0 0 1 20 7a7 7 0 0 1-7 7h-1.226zm-1.064-2.936c.519.198.787.801.598 1.346L9.94 16.36c-.19.545-.763.826-1.282.627-.519-.198-.786-.801-.597-1.346l1.368-3.95c.188-.545.762-.826 1.281-.627zm1.632 3.949c.519.198.786.801.597 1.346l-1.368 3.95c-.188.545-.762.826-1.281.627-.519-.198-.787-.801-.598-1.346l1.368-3.95c.19-.545.763-.826 1.282-.627zM9 14.949h3c.552 0 1 .47 1 1.051 0 .58-.448 1.05-1 1.05H9c-.552 0-1-.47-1-1.05 0-.58.448-1.05 1-1.05z"></path></svg>
+ 
+                              <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Mental and Emotional Well-Being</h3>
+                          </div>
+                          <p class="mt-3 mb-1 text-xs font-medium text-indigo-500 uppercase">------------</p>
+                          <p class="mb-2 text-gray-600">Safe, supportive spaces for Journey of Balance healing, both online and in educational institutions.
+
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="w-full sm:w-1/2">
+                  <div class="relative h-full ml-0 md:mr-10">
+                      <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-purple-500 rounded-lg"></span>
+                      <div class="relative h-full p-5 bg-white border-2 border-purple-500 rounded-lg">
+                          <div class="flex items-center -mt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -2 24 24" width="64" fill="currentColor"><path d="M5 18V1H3v17H0V0h11a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5zM6 4v2h5V4H6zm0 3v2h5V7H6zM3 18h2v2H3v-2z"></path></svg>
+                              <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Substance Abuse and Recovery</h3>
+                          </div>
+                          <p class="mt-3 mb-1 text-xs font-medium text-purple-500 uppercase">------------</p>
+                          <p class="mb-2 text-gray-600">Community outreach and education focusing on prevention and holistic paths for recovery, nurturing Warriors of Well-Being.</p>
+                      </div>
+                  </div>
+              </div>
+              
+          </div>
+          <div class="flex flex-col w-full mb-5 sm:flex-row">
+              <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
+                  <div class="relative h-full ml-0 mr-0 sm:mr-10">
+                      <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-blue-400 rounded-lg"></span>
+                      <div class="relative h-full p-5 bg-white border-2 border-blue-400 rounded-lg">
+                          <div class="flex items-center -mt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-4 -2 24 24" width="64" fill="currentColor"><path d="M3 0h10a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3zm1 7a1 1 0 1 0 0 2h8a1 1 0 0 0 0-2H4zm0 8a1 1 0 0 0 0 2h5a1 1 0 0 0 0-2H4zM4 3a1 1 0 1 0 0 2h8a1 1 0 0 0 0-2H4zm0 8a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2H4z"></path></svg>
+                              <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Personal and Social Development</h3>
+                          </div>
+                          <p class="mt-3 mb-1 text-xs font-medium text-blue-400 uppercase">------------</p>
+                          <p class="mb-2 text-gray-600">Life skills workshops and mentorship programmes aimed at fostering Architects of the Future for personal growth and social dynamics.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
+                  <div class="relative h-full ml-0 mr-0 sm:mr-10">
+                      <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-yellow-400 rounded-lg"></span>
+                      <div class="relative h-full p-5 bg-white border-2 border-yellow-400 rounded-lg">
+                          <div class="flex items-center -mt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-3.5 -1 24 24" width="64" fill="currentColor"><path d="M1.32 13.211a6.995 6.995 0 0 1 .594-6.757C3.356 4.317 8.08 2.433 16.084.801c-.268 6.851-1.122 11.345-2.563 13.482a7 7 0 0 1-9.467 2.05 7.563 7.563 0 0 1 2.27-2.482l.507-.352a2 2 0 1 0-2.278-3.288l-.507.352A11.56 11.56 0 0 0 1.32 13.21zm.746 6.86a1 1 0 1 1-2 0c0-3.466 1.7-6.712 4.55-8.686l.507-.352a1 1 0 0 1 1.139 1.644l-.507.352a8.567 8.567 0 0 0-3.689 7.042z"></path></svg>
+                              <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Authentic Self-Expression & Digital Citizenship</h3>
+                          </div>
+                          <p class="mt-3 mb-1 text-xs font-medium text-yellow-400 uppercase">------------</p>
+                          <p class="mb-2 text-gray-600"> Platforms for expression and responsible engagement, fostering Creative Capital, and Digital Productivity.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="w-full sm:w-1/2">
+                  <div class="relative h-full ml-0 md:mr-10">
+                      <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-green-500 rounded-lg"></span>
+                      <div class="relative h-full p-5 bg-white border-2 border-green-500 rounded-lg">
+                          <div class="flex items-center -mt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -1.5 24 24" width="64" fill="currentColor"><path d="M13 20.565v-5a3 3 0 0 0-6 0v5H2a2 2 0 0 1-2-2V7.697a2 2 0 0 1 .971-1.715l8-4.8a2 2 0 0 1 2.058 0l8 4.8A2 2 0 0 1 20 7.697v10.868a2 2 0 0 1-2 2h-5z"></path></svg>
+                              <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Institutional Development</h3>
+                          </div>
+                          <p class="mt-3 mb-1 text-xs font-medium text-green-500 uppercase">------------</p>
+                          <p class="mb-2 text-gray-600">Strengthening our organisational capacity as Agents of Change to sustainably deliver our mission.</p>
+                      </div>
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+
+  </Container>
+</Layout>

@@ -1,0 +1,132 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "@astrojs/image/components";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+
+// Filter team entries with 'draft: false' & date before current date
+const publishedTeamMembers = await getCollection("team", ({ data }) => {
+  return !data.draft && data.publishDate < new Date();
+});
+---
+
+<Layout title="About">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT98KX4B1X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MT98KX4B1X');
+</script>
+  <Container>
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+          <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+            <span class="relative inline-block">
+              <svg viewBox="0 0 52 24" fill="currentColor" class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
+                <defs>
+                  
+                </defs>
+                <rect fill="url(#bebc38d1-bf72-4c77-a073-f0fe5abe0753)" width="52" height="24"></rect>
+              </svg>
+              <span class="relative"></span>
+            </span>
+            🌟 HAZEYouth🌟
+          </h2>
+          <h6 class="text-base font-bold text-gray-700 md:text-xl">
+            🌟 Where Your Potential Unleashes Your Future 🌟
+          </p>
+        </div>
+        <div class="grid gap-8 row-gap-12 lg:grid-cols-2">
+          <div class="max-w-md sm:mx-auto sm:text-center">
+            <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 sm:mx-auto sm:w-24 sm:h-24">
+              <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-20 sm:h-20" stroke="currentColor" viewBox="0 0 52 52">
+                <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+              </svg>
+            </div>
+            <h6 class="mb-3 text-xl font-bold leading-5">
+                🌈 Vision: A Legacy of Positivity 🌈</h6>
+            <p class="mb-3 text-sm text-gray-900">
+                We're not just dreaming of a better tomorrow; we're building it today. At HAZEYouth, we envision a world where young people aren't just surviving; they're thriving. We aim to leave a legacy of positivity, where young minds enjoy lives filled with health, creativity, and enlightenment.
+            </p>
+            <a href="/blog" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn more</a>
+          </div>
+          <div class="max-w-md sm:mx-auto sm:text-center">
+            <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50 sm:mx-auto sm:w-24 sm:h-24">
+              <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-20 sm:h-20" stroke="currentColor" viewBox="0 0 52 52">
+                <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+              </svg>
+            </div>
+            <h6 class="mb-3 text-xl font-bold leading-5">🚀 Mission: Unlock Your Excellence 🚀</h6>
+            <p class="mb-3 text-sm text-gray-900">
+                Why settle for good when you can be excellent? Our mission is to tap into the untapped reservoir of young people's potential. We're not just about reaching for the sky; we're about leaving footprints on the moon.
+            </p>
+            <a href="/blog" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn more</a>
+          </div>
+        </div>
+      </div>
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div class="max-w-xl mb-1 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+          
+          
+          <h6 class="text-2xl text-bold font-bold leading-5 text-gray-700 ">
+            🌟 Our Core Values: The Pillars of HAZEYouth 🌟
+          </h6>
+        </div>
+        <div class="grid gap-5 mb-8 md:grid-cols-2 lg:grid-cols-2">
+          <div class="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+            <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
+              <svg class="w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+                <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+              </svg>
+            </div>
+            <h6 class="mb-2 font-semibold leading-5">🤝 Inclusiveness: 🤝 </h6>
+            <p class="text-sm text-gray-900">
+              Everyone's invited to this party! We champion diversity, social inclusion, and gender equality because we know that the more diverse we are, the stronger we become.   </p>
+          </div>
+          <div class="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+            <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
+              <svg class="w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+                <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+              </svg>
+            </div>
+            <h6 class="mb-2 font-semibold leading-5">🌱 Positivity 🌱</h6>
+            <p class="text-sm text-gray-900">
+              We're all about the vibe! We believe young people should lead lives that are not just competent and confident but also interconnected. We're talking about a life filled with healthy, creative, and enlightened experiences.
+            </p>
+          </div>
+          <div class="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+            <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
+              <svg class="w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+                <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+              </svg>
+            </div>
+            <h6 class="mb-2 font-semibold leading-5">💪 Boldness 💪</h6>
+            <p class="text-sm text-gray-900">
+              Dare to be different. We challenge the stereotypes that hold young people back. Excellence isn't just a goal; it's a standard.
+
+            </p>
+          </div>
+          
+          <div class="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+            <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
+              <svg class="w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+                <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+              </svg>
+            </div>
+            <h6 class="mb-2 font-semibold leading-5">🛡️ Integrity:🛡️</h6>
+            <p class="text-sm text-gray-900">
+                We're as real as it gets. Accountability isn't just a buzzword for us; it's a commitment. We hold ourselves accountable to you, our community, and our partners.
+            </p>
+          </div>
+        </div>
+                
+    <Sectionhead>
+      <Fragment slot="title">Together, let's shape a future where young people are not just surviving but thriving.</br></Fragment>
+      <Fragment slot="desc">🌈🚀 #HAZEYouth #UnlockYourPotential #BeTheChange #YouthEmpowerment</Fragment>
+    </Sectionhead>
+  </Container>
+</Layout>

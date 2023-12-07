@@ -1,0 +1,28 @@
+---
+import Container from "@components/container.astro";
+import Cta from "@components/cta.astro";
+import Features from "@components/features.astro";
+import Footer from "@components/footer.astro";
+import Hero from "@components/hero.astro";
+import Logos from "@components/logos.astro";
+import Layout from "@layouts/Layout.astro";
+import Accordion from "@components/accordion.astro";
+---
+
+<Layout title="" >
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MT98KX4B1X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MT98KX4B1X');
+</script>
+  <Container >
+    <Hero />
+   <Accordion />
+    <Features />
+        <Cta />
+  </Container>
+</Layout>
